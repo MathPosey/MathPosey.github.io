@@ -1,1 +1,96 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Posey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.nav').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+    
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <div class="navigation">
+        <a class="nav" href="#projects">Projects</a>
+        <a class="nav" href="#about-me">About Me</a>
+        <a class="nav" href="https://www.linkedin.com/in/matthew-posey-a2848b76/">Linked In</a>
+        <a class="nav" href="https://github.com/MathPosey">GitHub</a>
+        <a class="nav" href="Matthew Posey Resume 2025 Computer Science Related Career.pdf">Resume</a>
+    </div>
+
+    
+    <div class="intro">
+        <h1>Matthew Posey</h1>
+        <p>Computer scientist • Web Developer • Automation Programmer</p>
+        <canvas id="canvas1"></canvas>
+    </div>
+
+
+    <div id="projects" class="section">
+        <div class="Center-text">
+            <h1>Projects</h1>
+            <p>Marketing • Technology • Web Developer • Automation Programmer
+                <br>
+                A professional with expertise in Marketing, Technology, Web Development, and Automation Programming brings a multifaceted skill set to the modern digital landscape.
+                 Their marketing acumen allows them to craft compelling campaigns that resonate with target audiences, while their technological proficiency ensures they stay abreast of the latest advancements.
+                  As a web developer, they create robust, user-friendly websites that serve as the digital face of businesses.
+                 Their knowledge in automation programming streamlines processes, enhancing efficiency and productivity by automating repetitive tasks.
+                 This unique combination of skills makes them invaluable in driving innovation and achieving business goals in a fast-paced, digital-first world.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="https://github.com/MathPosey" class="project project1"></a>
+
+            <a href="https://www.youtube.com/channel/UC9oRBjoo-vL4SJOvQeK6YoA" class="project project2"></a>
+
+            <a href="https://www.linkedin.com/in/posey-matthew-ptr99/" class="project project3"></a>
+
+            <a href="projectdisplay.html?project=project4" class="project project4"></a>
+        </div>
+    </div>
+
+
+    <div id="about-me" class="section">
+        <div class="container">
+            <div class="about-me">
+                <div class="text-column">
+                    <h1>Matthew Posey</h1>
+                    
+                    <p><br><br>I am a passionate and dedicated professional with a strong foundation in computer science. 
+                        <br><br>Graduating with a degree in Computer Science, I've delved deep into the realms of software development, web design, and automation programming.
+                        <br><br>I'm passionate about leveraging technology to drive positive change and unlock new possibilities. 
+                        <br><br> With excellent communication skills and a knack for problem-solving, I enjoy working closely with cross-functional teams to conceptualize, develop, and deploy solutions that exceed expectations. 
+                        <br><br>Whether it's troubleshooting bugs in code, optimizing user experiences, or architecting scalable systems, I approach every task with enthusiasm and diligence.
+                    </p>
+                </div>
+                <div class="photo">
+                    <!-- Your photo goes here -->
+                    <img src="pictures/MattPosey.png" alt="Photo of Matthew Posey">
+                </div>
+                <canvas id="canvas2"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lavaLamp2.js"></script>
+    <script src="smoothScroll.js"></script>
+
+
+</body>
+</html>
